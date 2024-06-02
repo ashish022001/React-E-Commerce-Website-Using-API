@@ -1,0 +1,11 @@
+/* marquee{
+    padding: 50px;
+}
+img:hover{
+    transform: scale(1.5);
+    box-shadow: 4px 4px 3px black;
+    transition: 2s;
+}
+img{
+    transition: 2s;
+} */

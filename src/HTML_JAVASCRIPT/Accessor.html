@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <script>
+        var username = prompt("Enter Your Username");
+        var role = prompt("Enter Your Role","admin/manager/customer");
+        var ProductName = prompt("Enter New Product Name")
+        class product{
+            _ProducName;
+            get ProductName()
+            {
+                return this._ProducName;
+            }
+            set ProductName(newvalue)
+            {
+                if(role === "admin")
+                {
+                    this._ProducName = newvalue;
+                }
+                else
+                {
+                    document.write(`Hello ! ${username} - you are`)
+                }
+            }
+        }
+        let obj = new product()
+        obj.ProductName = ProductName;
+        if(obj.ProductName)
+        {
+            document.write(`Product Name = ${obj.ProductName}`);
+        }
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

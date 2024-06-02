@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var action;
+        var password = prompt("Enter Password")
+        if(password == "admin")
+        {
+            action=function(){
+                document.write("Login Success")
+            }
+        }
+        else
+        {
+            action=function(){
+                document.write("Invalid Password")
+            }
+        }
+        action();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

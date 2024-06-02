@@ -1,0 +1,8 @@
+.card{
+    width: 220px;
+    
+}
+main{
+    height: 500px;
+    overflow: auto;
+}

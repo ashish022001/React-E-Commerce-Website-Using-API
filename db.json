@@ -1,0 +1,72 @@
+{
+  "user": [
+    {
+      "id": 10,
+      "name": "Ashish",
+      "username": "ashish",
+      "email": "ashish@gmail.com",
+      "phone": "0000000000",
+      "website": "demo@gmail.com"
+    },
+    {
+      "id": 11,
+      "name": "ashu",
+      "username": "ashu",
+      "email": "ashu@gmail.com",
+      "phone": "0000000000",
+      "website": "demo@gmail.com"
+    },
+    {
+      "id": 12,
+      "name": "abc",
+      "username": "abc",
+      "email": "abc@gmail.com",
+      "phone": "0000000000",
+      "website": "demo@gmail.com"
+    },
+    {
+      "id": "c843"
+    },
+    {
+      "id": "5276",
+      "name": "test",
+      "email": "test@gmail.com"
+    },
+    {
+      "id": "3e12",
+      "name": "test",
+      "email": "test@gmail.com"
+    },
+    {
+      "id": "b795"
+    },
+    {
+      "id": "5429"
+    },
+    {
+      "id": "c466",
+      "name": "test1",
+      "email": "test1@gmail.com"
+    },
+    {
+      "id": "6be4",
+      "username": "abc",
+      "password": "aa"
+    },
+    {
+      "id": "16c2",
+      "username": "abc",
+      "password": "aa"
+    },
+    {
+      "id": "80d7",
+      "username": "abc",
+      "password": "aa"
+    },
+    {
+      "id": "9477",
+      "username": "abc",
+      "password": "aa"
+    }
+  ]
+}

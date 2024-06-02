@@ -1,0 +1,10 @@
+.card-header{
+    height: 100px;
+}
+.card{
+    width: 250px;
+}
+main{
+    height: 500px;
+    overflow: auto;
+}

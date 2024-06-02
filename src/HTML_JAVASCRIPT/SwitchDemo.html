@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- 
+
+
+            Cascading Dropdown with Switch
+
+            Task :- Design Inox movies Toolbar
+
+
+     -->
+    <style>
+        select{
+            width: 200px;
+        }
+    </style>
+    <script>
+        var categories = ["Select a Categories","Electronics","Footwear"];
+        var electronics = ["Select Electronics Product","TV","Mobile"];
+        var footwear = ["Select Footwear Product","Nike Casuals","Lee Boot"];
+        var product = ["Select A Categories"];
+
+        function LoadProduct()
+        {
+            var lstProduct = document.getElementById("lstProduct");
+            lstProduct.innerHTML = "";
+            for(var item of product)
+            {
+                var option = document.createElement("option");
+                option.text = item;
+                option.value = item;
+                lstProduct.appendChild(option);
+            }
+        }
+        function LoadCategories()
+        {
+            var lstCategories = document.getElementById("lstCategories");
+            for(var items of categories)
+            {
+                var option = document.createElement("option");
+                option.text = items;
+                option.value = items;
+                lstCategories.appendChild(option);
+            }
+        }
+        function bodyload()
+        {
+            LoadCategories();
+            LoadProduct();
+        }
+        function categoriesChange()
+        {
+            var categoryName = document.getElementById("lstCategories").value;
+             switch(categoryName)
+             {
+                case "Electronics":
+                    product = electronics;
+                    LoadProduct();
+                    break;
+                case "Footwear":
+                    product = footwear; 
+                    LoadProduct(); 
+                    break;
+                default:
+                    product = ["Please Select a Categories"];
+                    LoadProduct();
+                    break;
+             }
+
+        }
+    </script>
+</head>
+<body onload="bodyload()">
+    <div>
+        <label for="">Select Categories</label>
+        <div>
+            <select onchange="categoriesChange()" id="lstCategories">
+
+            </select>
+        </div>
+        <div>
+            <label>Select Product</label>
+            <div>
+            <select id="lstProduct"></select>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
